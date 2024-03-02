@@ -1,0 +1,78 @@
+body{
+    background-image: url(violet.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+.t{
+    width: 390px;
+    height:auto ;
+    background: radial-gradient(rgba(255,255,255,0.6));
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+}
+h2{
+    margin-top: 2px;
+    margin-left: 9%;
+    font-size: 20px;
+    cursor: pointer;
+}
+input{
+    margin-left: 30px;
+}
+h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+input,select{
+    width: 80%;
+    height: 30px;
+    outline:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    border-bottom: solid #000;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: cursive;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+select{
+    margin-left: 30px;
+}
+input:hover{
+    border-bottom: solid black;
+}
+::placeholder{
+    color: white;
+}
+option{
+    color: #000;
+}
+.button{
+    font-size: 18px;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color:#fff;
+    background: #000;
+    margin-left: 135px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.button:hover{
+    color: #000;
+    background: #fff;
+}

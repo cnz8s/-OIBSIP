@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="stylesheet" href="t3.css">
+    <style>
+        h2,h3{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="t">
+        <h3>Temperature convertor</h3>
+        <form>
+        <h2>Degree</h2>
+        <input type="text" name="" id="a1" placeholder="Enter the value">
+        <h2>Type</h2>
+        <select id="a">
+            <option value="">Select Type</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Celsius">Celsius</option>
+        </select>
+        <h2>Result</h2>
+        <input type="text"id="i1"><br>
+        <button class="button" type="button" onclick="f()">Convert</button><br>
+        </form>
+    </div>
+    <script>
+        function f(){
+        var a1=parseFloat(document.getElementById("a1").value);
+        var d=document.getElementById("a").value;
+        var t="";
+        if(isNaN(a1))
+        window.alert("Should enter number");
+        if(d=="Fahrenheit")
+            t=((1.8*a1)+32+" degree Fahrenheit");
+        else if(d=="Celsius")
+            t=((a1-32)*(5/9)+" degree Celsius");
+        else
+        window.alert("Should select celsius or fahrenheit");
+        document.getElementById("i1").placeholder=t;
+        }
+    </script>
+</body>
+</html>
