@@ -1,0 +1,114 @@
+*{
+    margin:0 ;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: linear-gradient(145deg,#4D0062 37.47%,#250074 93.82%);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;left: 0;
+    padding: 2rem 5rem;
+    animation: img .5s linear;
+    position: sticky;
+}
+.c{
+    background-size:cover ;
+    width:3rem ;
+    height:3ren ;
+    color: #fff;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a{
+    font-size: 1.5rem;
+    color:#fff;
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+    transition: .2s linear;
+}
+nav ul li a:hover{
+background:#fff;
+color: #333;
+letter-spacing: .5rem;
+}
+.con{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+.content{
+    color: #fff;
+    width: 40vw;
+    font-size: italic;
+    animation: co .5s linear;
+}
+.content h1{
+    font-size:2.5rem;
+}
+.content ul li{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    letter-spacing: .1rem;
+    list-style-position:inside;
+    list-style-type: none;
+}
+.b button{
+outline: none;
+border: none;
+background: #fff;
+transition: .2s linear;
+cursor: pointer;
+border-radius: 5rem;
+color: #333;
+height: 4rem;
+padding-left: 2rem;padding-right:  2rem;
+margin-bottom: 2rem;
+}
+.b button:hover{
+    color: #fff;
+    background: none;
+    border: .2rem solid #fff;
+    letter-spacing: .2rem;
+}
+.image{
+    margin-top: 1rem;
+}
+.image img{
+    width: 40vw;
+animation: img .5s linear;
+}
+@keyframes img{
+    0%{
+        transform:translateY(-10rem);
+        }
+}
+@keyframes co{
+    0%{
+        transform:translateX(-10rem);
+        }
+}
